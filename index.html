@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img src="https://freepngimg.com/thumb/coffee/74798-tea-coffee-cafe-starbucks-png-free-photo-thumb.png" class="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+    <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    <a href="#">Learn more></a>
+
+</div>
+<div class="imgBox">
+    <a href="#"><img src="https://freepngimg.com/download/starbucks/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png" class="starbucks">
+</div>
+<ul class="thumb">
+    <li><a href="#"><img src="https://freepngimg.com/thumb/coffee/62115-tea-coffee-drink-starbucks-latte-free-download-image.png"> <onclick="imgSlider('img src='https://freepngimg.com/download/starbucks/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png');changeCircleColor(#017143)></a></li>
+    <li><a href="#"><img src="https://freepngimg.com/thumb/coffee/62202-coffee-frappuccino-food-drink-starbucks-unicorn.png"> <onclick="imgSlider('img src='https://freepngimg.com/download/starbucks/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png');changeCircleColor(#eb7495)></a></li>
+   <li><a href="#"><img src="https://freepngimg.com/download/starbucks/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png"> <onclick="imgSlider('img src='https://freepngimg.com/download/starbucks/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png');changeCircleColor(#d752b1)></a></li>
+</ul>
+<ul class="sci">
+    <li><a href="#"><img src="https://freepngimg.com/thumb/categories/1346.png"></a></li>
+    <li><a href="#"><img src="https://freepngimg.com/thumb/twitter/7-2-twitter-picture-thumb.png"></a></li>
+    <li><a href="#"><img src="https://freepngimg.com/thumb/instagram/62705-logo-sticker-computer-instagram-icons-download-hd-png-thumb.png"></a></li>
+</section>
+    
+<script type="text/javascript">
+function imgSlider(anything);{
+    document.querySelector('.starbucks').src = anything;
+}
+
+function changeCircleColor(color){
+    const circle = document.querySelector('.circle');
+    circle.style.background = color;
+}
+</script>
+</body>
+</html>
